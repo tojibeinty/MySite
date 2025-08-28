@@ -10,7 +10,6 @@
 </head>
 <body>
   <header>
-    <img src="profile.jpg" alt="صورة أحمد عدي حاتم" class="profile-img">
     <h1>أحمد عدي حاتم</h1>
     <p>فني مختبر سريري | بكالوريوس علوم الحياة (بايولوجي)</p>
     <div class="social-links">
@@ -66,23 +65,5 @@
   <footer>
     <p>© 2025 أحمد عدي حاتم | جميع الحقوق محفوظة</p>
   </footer>
-  <script>
-  const sections = document.querySelectorAll('.section');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-</script>
-
 </body>
 </html>
